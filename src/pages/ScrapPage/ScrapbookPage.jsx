@@ -14,33 +14,33 @@ export default function ScrapbookPage({ onNext }) {
     {
       title: "Remember this? Our silly selfie together, just us being dummiebears 😄",
       note: "I still have this saved yes. It's one of the photos of all time. 😁",
-      image: "/photos/photo1.jpg"
+      image: "/SuperSecretSuprise/photos/photo1.jpg"
     },
     {
       title: "I still laugh thinking about this day we spent just talking and hanging out for hours ❤️",
       note: "Time flew by so fast. I didn't want that day to end.",
-      image: "/photos/photo2.jpg"
+      image: "/SuperSecretSuprise/photos/photo2.jpg"
     },
     {
       title: "Strawberries, and coffee? and you? always will be my favorite combo 🥤🍓☕",
       note: "The drinks were sweet, but not as sweet as youu.",
-      image: "/photos/photo3.jpg"
+      image: "/SuperSecretSuprise/photos/photo3.jpg"
     },
     {
       title: "Who knew our rallies would become one of my favorite memories? 🏸",
       note: "You're getting way too good at this. I might need to start practicing.",
-      image: "/photos/photo4.jpg"
+      image: "/SuperSecretSuprise/photos/photo4.jpg"
     },
     {
       title: "Even our silly little moments are my favorite 💕",
       note: "The random stuff we do together? That's what makes us, us.",
-      video: "/video/video1.mp4",
+      video: "/SuperSecretSuprise/video/video1.mp4",
       isvideo: true
     },
     {
       title: "Our hangouts together make everything sweeter ✨",
       note: "Ill always and always will be your no.1 cravings provider. (Cheers to more cheesecakes) 🥰",
-      image: "/photos/photo5.jpg"
+      image: "/SuperSecretSuprise/photos/photo5.jpg"
     },
     {
       title: "A special moment, just for you 💐",
@@ -154,7 +154,7 @@ export default function ScrapbookPage({ onNext }) {
                   controls
                   playsInline
                   preload="metadata"
-                  poster= "/photos/video-thumb.jpg"
+                  poster= "/SuperSecretSuprise/photos/video-thumb.jpg"
                 >
                   Your browser does not support the video tag.
                 </video>

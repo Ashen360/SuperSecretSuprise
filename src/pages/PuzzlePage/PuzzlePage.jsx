@@ -146,7 +146,7 @@ export default function PuzzlePage({ onNext }) {
                     <div
                       className="puzzle-piece placed"
                       style={{
-                        backgroundImage: `url("/photos/puzzle.jpg")`,
+                        backgroundImage: `url("/SuperSecretSuprise/photos/puzzle.jpg")`,
                         backgroundSize: `${COLS * 100}% ${ROWS * 100}%`,
                         backgroundPosition: `${(col / (COLS - 1)) * 100}% ${(row / (ROWS - 1)) * 100}%`,
                       }}
@@ -161,7 +161,7 @@ export default function PuzzlePage({ onNext }) {
           {showingFullImage && (
             <div className="full-image-container">
               <img 
-                src="/photos/puzzle.jpg" 
+                src="/SuperSecretSuprise/photos/puzzle.jpg" 
                 alt="Completed puzzle"
                 className="full-puzzle-image"
               />
@@ -180,7 +180,7 @@ export default function PuzzlePage({ onNext }) {
                 style={{
                   left: `${piece.currentX}%`,
                   top: `${piece.currentY}%`,
-                  backgroundImage: `url("/photos/puzzle.jpg")`,
+                  backgroundImage: `url("/SuperSecretSuprise/photos/puzzle.jpg")`,
                   backgroundSize: `${COLS * 100}% ${ROWS * 100}%`,
                   backgroundPosition: `${(piece.correctCol / (COLS - 1)) * 100}% ${(piece.correctRow / (ROWS - 1)) * 100}%`,
                 }}

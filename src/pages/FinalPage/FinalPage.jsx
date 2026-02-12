@@ -27,7 +27,7 @@ export default function FinalPage() {
         <div className="photo-heart">
           <div className="heart-shape">
             <img 
-              src="/photos/lovey.jpg" 
+              src="/SuperSecretSuprise/photos/lovey.jpg" 
               alt="Our photo" 
               className="final-photo"
             />
