@@ -1,0 +1,157 @@
+.final-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.final-content {
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  animation: fadeIn 1s ease;
+}
+
+.final-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #ff69b4;
+  margin-bottom: 1rem;
+}
+
+.final-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  color: #c25283;
+  margin-bottom: 3rem;
+}
+
+.photo-heart {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.heart-shape {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  10%,
+  30% {
+    transform: scale(1.1);
+  }
+  20%,
+  40% {
+    transform: scale(1);
+  }
+}
+
+.final-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 15px 50px rgba(255, 105, 180, 0.3);
+  border: 5px solid white;
+}
+
+.yes-btn {
+  background: linear-gradient(135deg, #ff69b4 0%, #ffd1dc 100%);
+  border: none;
+  padding: 1.5rem 4rem;
+  border-radius: 50px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.4);
+  font-family: "Poppins", sans-serif;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.yes-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(255, 105, 180, 0.5);
+}
+
+.final-message {
+  animation: scaleIn 0.8s ease;
+}
+
+.final-message h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: #ff69b4;
+  margin-bottom: 1.5rem;
+}
+
+.final-message p {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  color: #c25283;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.closing-note {
+  font-size: clamp(1rem, 2.5vw, 1.2rem) !important;
+  margin-top: 2rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.final-confetti {
+  position: fixed;
+  top: -50px;
+  font-size: 35px;
+  animation: confettiFall ease-out forwards;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+@keyframes confettiFall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .final-page {
+    padding: 2rem 1rem;
+  }
+
+  .photo-heart {
+    margin: 2rem 0;
+  }
+
+  .heart-shape {
+    width: 200px;
+    height: 200px;
+  }
+
+
+
+  .yes-btn {
+    padding: 1.2rem 3rem;
+    font-size: 1.3rem;
+  }
+
+  .closing-note br {
+    display: none;
+  }
+}

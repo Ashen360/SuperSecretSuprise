@@ -1,0 +1,38 @@
+.valentine-app {
+    min-height: 100dvh;
+    background: transparent;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.floating-heart {
+    position: fixed;
+    bottom: -60px;
+    font-size: 24px;
+    animation: floatUp 7s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.6;
+    will-change: transform;
+}
+
+@keyframes floatUp {
+    0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+    }
+    10% {
+    opacity: 0.6;
+    }
+    90% {
+    opacity: 0.6;
+    }
+    100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
